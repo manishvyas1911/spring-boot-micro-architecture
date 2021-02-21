@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: eureka-naming-server
+
+server:
+  port: ${port:8761}

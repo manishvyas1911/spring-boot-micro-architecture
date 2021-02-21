@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mani-spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/manishvyas1911/environment-variable-repo.git
+          default-label: main
+          cloneOnStart: true
+
+
+      
+health:
+  config:
+    enabled: false
+server:
+  port: ${port:8888}  

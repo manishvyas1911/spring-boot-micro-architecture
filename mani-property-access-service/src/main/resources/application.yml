@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: property-file-access-service
+  profiles:
+    active: dev
+
+server:
+  port: ${port:8100}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
+        - health
