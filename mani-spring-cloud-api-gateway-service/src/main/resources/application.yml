@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-cloud-api-gateway-service
+#  cloud:#    gateway:#      routes:#      - id: product-enquiry
+#        uri: http://localhost:8300/
+#        predicates:#        - Path=/product-enquiry/**
+server:  port: ${port:8763}
